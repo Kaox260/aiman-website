@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Button = ({text, to}) => {
+const Button = ({ text, to, backgroundColor }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper $backgroundColor={backgroundColor}>
       <Link to={to} className="button-link">
         <button className="button">
           <p className="button__text">
@@ -37,7 +37,7 @@ const StyledWrapper = styled.div`
   .button {
     cursor: pointer;
     border: none;
-    background: #7808d0;
+    background: ${({ $backgroundColor }) => $backgroundColor || '#7808d0'};
     color: #fff;
     width: 100px;
     height: 100px;
@@ -107,7 +107,5 @@ const StyledWrapper = styled.div`
       rotate: 360deg;
     }
   }`;
-
-
 
 export default Button;

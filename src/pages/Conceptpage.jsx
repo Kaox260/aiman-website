@@ -9,14 +9,14 @@ function Conceptpage() {
             <div className="min-h-screen bg-white relative overflow-hidden">
                 {/* Cercles animés en arrière-plan */}
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-float1"></div>
-                    <div className="absolute top-40 right-20 w-24 h-24 bg-purple-200 rounded-full opacity-30 animate-float2"></div>
-                    <div className="absolute bottom-40 left-20 w-40 h-40 bg-green-200 rounded-full opacity-15 animate-float3"></div>
-                    <div className="absolute top-60 left-1/3 w-20 h-20 bg-pink-200 rounded-full opacity-25 animate-float4"></div>
-                    <div className="absolute bottom-20 right-1/4 w-36 h-36 bg-yellow-200 rounded-full opacity-20 animate-float5"></div>
-                    <div className="absolute top-1/4 right-1/3 w-28 h-28 bg-cyan-200 rounded-full opacity-30 animate-float6"></div>
-                    <div className="absolute bottom-1/3 left-1/4 w-16 h-16 bg-indigo-200 rounded-full opacity-25 animate-float7"></div>
-                    <div className="absolute top-1/2 left-1/2 w-44 h-44 bg-orange-200 rounded-full opacity-15 animate-float8"></div>
+                    <div className="absolute top-10 left-4 w-20 h-20 sm:w-32 sm:h-32 bg-blue-200 rounded-full opacity-20 animate-float1"></div>
+                    <div className="absolute top-32 right-8 w-16 h-16 sm:w-24 sm:h-24 bg-purple-200 rounded-full opacity-30 animate-float2"></div>
+                    <div className="absolute bottom-32 left-8 w-24 h-24 sm:w-40 sm:h-40 bg-green-200 rounded-full opacity-15 animate-float3"></div>
+                    <div className="absolute top-40 left-1/3 w-12 h-12 sm:w-20 sm:h-20 bg-pink-200 rounded-full opacity-25 animate-float4"></div>
+                    <div className="absolute bottom-10 right-1/4 w-24 h-24 sm:w-36 sm:h-36 bg-yellow-200 rounded-full opacity-20 animate-float5"></div>
+                    <div className="absolute top-1/4 right-1/3 w-16 h-16 sm:w-28 sm:h-28 bg-cyan-200 rounded-full opacity-30 animate-float6"></div>
+                    <div className="absolute bottom-1/3 left-1/4 w-10 h-10 sm:w-16 sm:h-16 bg-indigo-200 rounded-full opacity-25 animate-float7"></div>
+                    <div className="absolute top-1/2 left-1/2 w-28 h-28 sm:w-44 sm:h-44 bg-orange-200 rounded-full opacity-15 animate-float8"></div>
                 </div>
 
                 <style jsx>{`
@@ -83,24 +83,24 @@ function Conceptpage() {
                     .animate-float8 { animation: float8 16s ease-in-out infinite; }
                 `}</style>
 
-                <div className="max-w-6xl mx-auto px-8 py-12 relative z-10">
-                    <div className="text-center mb-16">
-                        <h1 className="text-5xl font-bold text-gray-900 mb-6">
+                <div className="max-w-6xl mx-auto px-4 sm:px-8 py-8 sm:py-12 relative z-10">
+                    <div className="text-center mb-10 sm:mb-16">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                             Le Concept
                         </h1>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+                        <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
                     </div>
                     
-                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl p-12 mb-12 border border-gray-100 backdrop-blur-sm">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-12 mb-8 sm:mb-12 border border-gray-100 backdrop-blur-sm">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">
                             Mon Approche du Développement
                         </h2>
-                        <p className="text-gray-600 leading-relaxed mb-12 text-center text-lg max-w-4xl mx-auto">
+                        <p className="text-gray-600 leading-relaxed mb-6 sm:mb-12 text-center text-base sm:text-lg max-w-2xl sm:max-w-4xl mx-auto">
                             Je crois en une approche centrée sur l'utilisateur, ou chaque concept de deisgn est mis à dispotition du concept <br/>
                             et dans le respect du projet, je crois qu'on peut rendre un projet meilleur si on crée un design qui dépasse les attentes.
                         </p>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center max-w-4xl mx-auto">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 justify-center max-w-4xl mx-auto">
                             <div className="text-center group">
                                 <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                                     <span className="text-3xl">💡</span>
@@ -123,11 +123,11 @@ function Conceptpage() {
                         </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl p-12 mb-12 border border-gray-100 backdrop-blur-sm">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-12 mb-8 sm:mb-12 border border-gray-100 backdrop-blur-sm">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
                             Méthodologie de Travail
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                             <div className="text-center group">
                                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                                     1
@@ -170,11 +170,11 @@ function Conceptpage() {
                         </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl p-12 border border-gray-100 backdrop-blur-sm">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-12 border border-gray-100 backdrop-blur-sm">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
                             Technologies et Outils
                         </h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
                             <div className="text-center group">
                                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                                     <span className="text-2xl">⚛️</span>
@@ -202,11 +202,10 @@ function Conceptpage() {
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            {/* SpinninButton */}
-            <div className="fixed bottom-8 right-8">
-                <Button text="CONTACT" to="/contact" />
+                {/* SpinninButton */}
+                <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8">
+                    <Button text="CONTACT" to="/contact" />
+                </div>
             </div>
         </div>
     )

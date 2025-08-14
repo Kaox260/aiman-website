@@ -14,16 +14,11 @@ function ErrorPage() {
                         <h3>Quelque chose ne tourne pas rond... !</h3>
                         <h3>Si tu veux voyager c'est juste ici ! </h3>
                         <Link to="/">
-                        <Button text={"A C C E U I L"}/>
+                        <Button text={"A C C E U I L"} to="/"/>
                         </Link>
                     </div>
                     <div className="">
 
-                    </div>
-                    
-                    {/* SpinninButton */}
-                    <div className="fixed bottom-8 right-8">
-                        <Button text="ACCUEIL" to="/" />
                     </div>
         </div>
     )

@@ -11,6 +11,7 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import Conceptpage from "./pages/Conceptpage.jsx";
 import AboutPages from "./pages/AboutPages.jsx";
+import WorkInProgress from './pages/WorkInProgress';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,12 @@ const router = createBrowserRouter([
     element: <AboutPages />
   },
   {
-    path: "/404",
+    path: "/error",
     element: <ErrorPage />
+  },
+  {
+    path: "/travaux",
+    element: <WorkInProgress />
   },
   {
     path: "*",
